@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seguro No Pagamos Cooperativa</title>
+  <link rel="icon" href="/cash_icon-icons.com_51090.ico" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js"></script>
+</head>
+
+<body>
+  <form action="" name="formulario" onsubmit="servicio(); return false;">
+    <fieldset>
+      <legend>Solicitud de Seguro</legend>
+      <div>
+        <label>Nombre
+          <input type="text" ; placeholder="Ingrese su nombre" ; required
+            oninvalid="setCustomValidity('El campo nombre es obligatorio')" oninput="setCustomValidity('')" />
+        </label>
+        <label>Apellido
+          <input type="text" ; placeholder="Ingrese su apellido" ; required
+            oninvalid="setCustomValidity('El campo apellido es obligatorio')" oninput="setCustomValidity('')" />
+        </label>
+      </div>
+      <div>
+        <label>DNI
+          <input type="number" ; placeholder="Ingrese numero DNI" ; required
+            oninvalid="setCustomValidity('El campo DNI es obligatorio')" oninput="setCustomValidity('')" />
+        </label>
+        <label>Teléfono
+          <input type="tel" ; placeholder="Ingrese numero de telefono" />
+        </label>
+        <label>Email
+          <input type="email" ; placeholder="Ingrese correo electronico" ; required
+            oninvalid="setCustomValidity('El campo correo es obligatorio')" oninput="setCustomValidity('')" />
+        </label>
+        <p>*todos los campos son obligatorios</p>
+      </div>
+      <input type="reset" value="Borrar campos" id="reset" />
+      <br />
+      <br />
+      <form action="">
+        <fieldset>
+          <legend>Tipo de seguros disponibles:</legend>
+          <select name="seleccion" id="sel" size="">
+            <optgroup label="SEGUROS DISPONIBLES">
+              <option value="BASICO: valor de $500">Basico: $500</option>
+              <option value=" INTERMEDIO: valor de $1000">
+                Intermedio: $1000
+              </option>
+              <option value="PREMIUM: valor de $1500">premium: $1500</option>
+            </optgroup>
+          </select>
+          <button class="send" id="send">Confirmar y enviar</button>
+          <label for="" ; id="final">Servicio elegido:</label>
+          <div id="eleccion">
+            Una vez elegido el servicio se mostrará cuál es su suscripción
+          </div>
+        </fieldset>
+      </form>
+    </fieldset>
+  </form>
+  
+</body>
+
+</html>
