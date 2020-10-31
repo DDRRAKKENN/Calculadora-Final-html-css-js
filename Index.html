@@ -43,21 +43,30 @@
       <br />
       <form action="">
         <fieldset>
+
           <legend>Tipo de seguros disponibles:</legend>
-          <select name="seleccion" id="sel" size="">
+          <select name="seleccion" id="sel" onclick="seguro()">
             <optgroup label="SEGUROS DISPONIBLES">
-              <option value="BASICO: valor de $500">Basico: $500</option>
-              <option value=" INTERMEDIO: valor de $1000">
-                Intermedio: $1000
+              <option value="Servicio BASICO de $500." id="basico">
+                Basico
               </option>
-              <option value="PREMIUM: valor de $1500">premium: $1500</option>
+              <option value=" Servicio INTERMEDIO de $1000." id="intermedio">
+                Intermedio
+              </option>
+              <option value="Servicio PREMIUM de $1500." id="premium">
+                Premium
+              </option>
             </optgroup>
           </select>
-          <button class="send" id="send">confirmar y enviar</button>
-          <label for="" ; id="final">Servicio elegido:</label>
-          <div id="eleccion">
-            Una vez elegido el servicio se mostrará cuál es su suscripción
-          </div>
+          <label for="" id="seleccionado">Servicio elegido:</label>
+          <div>
+            <button class="send" id="send">Confirmar y enviar</button>
+            <div>
+              <label for="" ; id="final">Confirmacion de servicio:</label>
+              <div id="eleccion">
+                Una vez elegido el servicio se mostrará cuál es su suscripción
+              </div>
+            </div>
         </fieldset>
       </form>
     </fieldset>
