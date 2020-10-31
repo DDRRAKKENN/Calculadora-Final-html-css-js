@@ -1,5 +1,6 @@
 "use strict";
 
+
 function servicio() {
   document.getElementById("eleccion").innerHTML =
     "Usted eligio el servicio " +
