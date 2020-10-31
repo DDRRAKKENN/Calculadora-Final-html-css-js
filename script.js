@@ -3,7 +3,7 @@
 
 function servicio() {
   document.getElementById("eleccion").innerHTML =
-    "Usted eligio el servicio " +
+    "Usted eligio el " +
     document.getElementById("sel").value +
     ", Muchas gracias.";
 }
